@@ -1,6 +1,6 @@
-import BookForm from '../../components/BookForm/BookForm';
-import FilterChip from '../../components/FilterChip/FilterChip';
-import BookList from '../../components/BookList/BookList';
+import BookForm from "../../components/BookForm/BookForm.jsx";
+import FilterChip from '../../components/FilterCheck/FilterCheck.jsx';
+import BookList from '../../components/BookList/BookList.jsx';
 import './ShelfScreen.css';
 
 function ShelfScreen({ books, showOnlyUnread, onToggleFilter, onAdd, onToggleRead, onDelete }) {

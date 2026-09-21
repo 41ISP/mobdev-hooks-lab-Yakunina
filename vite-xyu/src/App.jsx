@@ -15,17 +15,17 @@ function App() {
       author: 'Неизвестный автор',
       read: false
     };
-    setBooks(prev => [...prev, newBook]);
+    setBooks(e => [...e, newBook]);
   };
 
   const handleToggleRead = (id) => {
-    setBooks(prev => prev.map(book => 
+    setBooks(e => e.map(book => 
       book.id === id ? { ...book, read: !book.read } : book
     ));
   };
 
   const handleDelete = (id) => {
-    setBooks(prev => prev.filter(book => book.id !== id));
+    setBooks(e => e.filter(book => book.id !== id));
   };
 
   return (
