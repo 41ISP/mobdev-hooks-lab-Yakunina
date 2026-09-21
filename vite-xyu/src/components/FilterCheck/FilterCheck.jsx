@@ -1,6 +1,6 @@
 import Checkbox from '../Checkbox/Checkbox';
 
-function FilterChip({ checked, onChange }) {
+function FilterCheck({ checked, onChange }) {
   return (
     <Checkbox
       checked={checked}
@@ -10,4 +10,4 @@ function FilterChip({ checked, onChange }) {
   );
 }
 
-export default FilterChip;
+export default FilterCheck;

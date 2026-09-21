@@ -15,14 +15,14 @@ function App() {
       author: 'Неизвестный автор',
       read: false
     };
-    setBooks(e => [...e, newBook]);
+    setBooks(e => [...e, newBook]); // засовываем в конец масива новую книгу с нашим названием
   };
 
   const handleToggleRead = (id) => {
     setBooks(e => e.map(book => 
       book.id === id ? { ...book, read: !book.read } : book
     ));
-  };
+  }; // 
 
   const handleDelete = (id) => {
     setBooks(e => e.filter(book => book.id !== id));

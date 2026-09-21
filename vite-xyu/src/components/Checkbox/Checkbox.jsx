@@ -2,7 +2,7 @@ import './Checkbox.css';
 
 function Checkbox({ checked, onChange, label }) {
   return (
-    <div className="filter-chip">
+    <div className="filter-check">
       <input
         type="checkbox"
         id="filterCheckbox"
